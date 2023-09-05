@@ -21,3 +21,35 @@ function generatePassword() {
     alert ('Please input a valid number')
   }
 }
+
+function upper() {
+  let upperCase = prompt("Would you like any upper case characters? (yes or no)");
+  if (upperCase === "yes") {
+    upperCase = true;
+    lower();
+  }
+  else if (upperCase === "no") {
+    upperCase = false;
+    lower();
+  }
+  else {
+    alert ('Please enter yes or no')
+  }
+}
+
+function lower() {
+  let lowerCase = prompt("Would you like any lower case characters? (yes or no)");
+  if (lowerCase === "yes") {
+    lowerCase = true;
+    spec();
+  }
+  else if (lowerCase === "no") {
+    lowerCase = false;
+    spec();
+  }
+  else {
+    alert ('Please enter yes or no')
+  }
+}
+
+
