@@ -19,6 +19,7 @@ function generatePassword() {
   }
   else {
     alert ('Please input a valid number')
+    generatePassword();
   }
 }
 
@@ -34,6 +35,7 @@ function upper() {
   }
   else {
     alert ('Please enter yes or no')
+    upper();
   }
 }
 
@@ -49,7 +51,39 @@ function lower() {
   }
   else {
     alert ('Please enter yes or no')
+    lower();
   }
 }
+
+function spec() {
+  let specCh = prompt("Would you like any special characters?")
+  if (specCh === "yes") {
+    specCh = true;
+    number();
+  }
+  else if (specCh === "no") {
+    specCh = false;
+    number();
+  }
+  else {
+    alert ('Please enter yes or no');
+    spec();
+  }
+}
+
+function number() {
+  let numberCh = prompt("Would you like any numbers?")
+  if (numberCh === "yes") {
+    numberCh = true;
+  }
+  else if (numberCh === "no") {
+    numberCh = false;
+  }
+  else {
+    alert ('Please enter yes or no');
+    number();
+  }
+}
+
 
 
