@@ -19,6 +19,8 @@
  generateBtn.addEventListener("click", writePassword);
  
  function generatePassword() {
+   charArr = "";
+   res = "";
    window.passLength = prompt("Enter how many characters you would like (between 8 and 125)"); 
    
    if (passLength >=8 && passLength<=125) {
