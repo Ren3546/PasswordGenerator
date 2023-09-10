@@ -102,7 +102,22 @@
    } 
  }
  
+ function pass() {
+  var x = document.getElementById("password"); 
+  x.textContent = passGen();
+ }
+
+ function passGen() {
+  const text = window.charArr;
+  let res = "";
+  for (let i = 0; i < passLength; i++) {
+    window.res += text[Math.floor(Math.random() * text.length)]
+  }
+  return window.res;
+ }
  
+ 
+
 
 
 
