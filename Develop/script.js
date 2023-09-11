@@ -17,7 +17,8 @@
  
  // Add event listener to generate button 
  generateBtn.addEventListener("click", writePassword);
- 
+
+//Initial prompt to ask for character length
  function generatePassword() {
    charArr = "";
    res = "";
@@ -35,7 +36,8 @@
      generatePassword(); 
    } 
  } 
-  
+
+//upper case character prompt
  function upper() { 
    let upperCase = prompt("Would you like any upper case characters? (yes or no)"); 
    if (upperCase === "yes") { 
@@ -52,7 +54,8 @@
      upper(); 
    } 
  } 
-  
+
+//lower case character prompt
  function lower() { 
    let lowerCase = prompt("Would you like any lower case characters? (yes or no)"); 
    if (lowerCase === "yes") { 
@@ -69,7 +72,8 @@
      lower(); 
    } 
  } 
-  
+
+//special character prompt
  function spec() { 
    let specCh = prompt("Would you like any special characters? (yes or no)") 
    if (specCh === "yes") { 
@@ -86,7 +90,8 @@
      spec(); 
    } 
  } 
-  
+
+//number prompt
  function number() { 
    let numberCh = prompt("Would you like any numbers? (yes or no)") 
    if (numberCh === "yes") { 
@@ -103,12 +108,14 @@
      number(); 
    } 
  }
- 
+
+//function paste password in the textbox
  function pass() {
   var x = document.getElementById("password"); 
   x.textContent = passGen();
  }
 
+//function to generate the random string from the character arrays
  function passGen() {
   const text = window.charArr;
   let res = "";
@@ -117,7 +124,8 @@
   }
   return window.res;
  }
- 
+
+//function to copy content to the user's clipboard
 function myFunction() {
   var copyText = document.getElementById("password");
   copyText.select();
