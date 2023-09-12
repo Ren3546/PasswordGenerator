@@ -41,7 +41,7 @@
  function upper() { 
    let upperCase = prompt("Would you like any upper case characters? (yes or no)"); 
    if (upperCase === "yes") { 
-     window.upperCh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+     window.upperCh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(" ");
      window.charArr = window.upperCh;
      lower();
    } 
@@ -59,7 +59,7 @@
  function lower() { 
    let lowerCase = prompt("Would you like any lower case characters? (yes or no)"); 
    if (lowerCase === "yes") { 
-     window.lowerCh = "abcdefghijklmnopqrstuvwxyz".split("");
+     window.lowerCh = "abcdefghijklmnopqrstuvwxyz".split(" ");
      window.charArr = window.upperCh.concat(window.lowerCh);
      spec(); 
    } 
